@@ -21,7 +21,7 @@ public class Kalkulator{
         }
 
 	public int pangkat(int a,int b){
-                return a ^ b;
+                return (int) Math.pow(a, b);
         }
 
 	}

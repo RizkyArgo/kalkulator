@@ -25,19 +25,19 @@ public class KalkuTest{
         @Test
         public void tesBagi() {
         Kalkulator kalku = new Kalkulator();
-        assertEquals(3, kalku.tambah(6, 2));
+        assertEquals(3, kalku.bagi(6, 2));
         }
 
         @Test
         public void tesModulus() {
         Kalkulator kalku = new Kalkulator();
-        assertEquals(1, kalku.tambah(3, 2));
+        assertEquals(1, kalku.modulus(3, 2));
         }
 
         @Test
         public void tesPangkat() {
         Kalkulator kalku = new Kalkulator();
-        assertEquals(16, kalku.tambah(4, 2));
+        assertEquals(16, kalku.pangkat(4, 2));
         }
 
 }
