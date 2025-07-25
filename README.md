@@ -1,1 +1,1 @@
-[!Java Ci](https://github.com/RizkyArgo/Kalkulator/Actions/fixz/badge.svg)
+![Java Ci](https://github.com/RizkyArgo/Kalkulator/actions/workflows/ci.yml/badge.svg)
