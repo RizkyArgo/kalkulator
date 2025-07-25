@@ -22,8 +22,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         distributions: temurin
-        java-version: $
-{{matrix.java-version}}
+        java-version: ${{matrix.java-version}}
 
     - name: Build with maven
       run: build -B package --file pom.xml
