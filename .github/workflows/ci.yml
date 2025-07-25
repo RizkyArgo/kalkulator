@@ -14,18 +14,18 @@ jobs:
       matrix:
         java-version: [11, 17]
 
-  steps:
-    - name: Checkout Repo
-      uses: actions/checkout@v3
+     steps:
+        - name: Checkout Repo
+          uses: actions/checkout@v3
 
-    - name: Setup Java
-      uses: actions/setup-java@v3
-      with:
-        distributions: temurin
-        java-version: ${{matrix.java-version}}
+        - name: Setup Java
+          uses: actions/setup-java@v3
+          with:
+            distributions: temurin
+            java-version: ${{matrix.java-version}}
 
-    - name: Build with maven
-      run: build -B package --file pom.xml
+        - name: Build with maven
+          run: build -B package --file pom.xml
 
-    - name: Test Run
-      run: mvn test
+        - name: Test Run
+          run: mvn test
